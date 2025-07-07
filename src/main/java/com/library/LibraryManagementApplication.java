@@ -8,6 +8,6 @@ public class LibraryManagementApplication {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         BookService service = (BookService) context.getBean("bookService");
-        service.addBook("Clean Code by Robert C. Martin");
+        service.addBook("Book injected via Spring Dependency Injection");
     }
 }
